@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="area-calculo">
+        <input type="text" name="calculo" id="calculo" />
+      </div>
+
+      <div class="area-operadores">
+        <input type="button" value="7" class="sete" onclick="putNumber('7')" />
+        <input type="button" value="8" class="oito" onclick="putNumber('8')" />
+        <input type="button" value="9" class="nove" onclick="putNumber('9')" />
+        <input type="button" value="4" class="quatro" onclick="putNumber('4')" />
+        <input type="button" value="5" class="cinco" onclick="putNumber('5')" />
+        <input type="button" value="6" class="seis" onclick="putNumber('6')" />
+        <input type="button" value="1" class="um" onclick="putNumber('1')" />
+        <input type="button" value="2" class="dois" onclick="putNumber('2')" />
+        <input type="button" value="3" class="tres" onclick="putNumber('3')" />
+        <input type="button" value="0" class="zero" onclick="putNumber('0')" />
+        <input type="button" value="." class="vi" onclick="putNumber('.')" />
+        <input type="button" value="+" class="ma" onclick="putNumber('+')" />
+        <input type="button" value="&lt;" class="cl" onclick="back()" />
+        <input type="button" value="-" class="me" onclick="putNumber('-')" />
+        <input type="button" value="*" class="ve" onclick="putNumber('*')" />
+        <input type="button" value="/" class="di" onclick="putNumber('/')" />
+        <input type="button" value="ENTER" class="en" onclick="calc()" />
+        <input type="button" value="C" class="c" onclick="eraseEverthing()" />
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

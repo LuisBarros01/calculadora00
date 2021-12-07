@@ -1,0 +1,123 @@
+:root {
+  /*-----SIZES------*/
+
+  --f-s-size: 0.5rem;
+  --f-m-size: 1rem;
+  --f-l-size: 1.5rem;
+  --f-x-size: 2rem;
+
+  /*-----COLORS-----*/
+
+  --bd-main-color: #1daf7e;
+  --bg-main-color: #20eba7;
+  --bg-main-color-dark: #074631;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bd-main-color);
+}
+
+div.area-calculo input[type='text'] {
+  background-color: #fff;
+  border: none;
+  margin: 0 auto 0 5px;
+  width: 96%;
+  height: 1.5rem;
+  text-align: right;
+  font-size: var(--f-l-size);
+}
+
+.area-operadores {
+  display: grid;
+  grid-template-areas:
+    'c clear divisao vezes'
+    'sete oito nove mais'
+    'quatro cinco seis menos'
+    'um dois tres enter'
+    'zero zero virgula enter';
+}
+
+div.area-operadores input[type='button'] {
+  color: var(--bg-main-color-dark);
+  font-weight: 1000;
+  border: none;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+div.area-operadores input[type='button']:hover {
+  background: #ccc;
+}
+
+.container {
+  background-color: var(--bg-main-color);
+  padding: 10px;
+  margin: 10px auto;
+  width: 250px;
+  height: 40vh;
+  border-radius: 10px;
+}
+
+/*GRID AREAS*/
+
+.um {
+  grid-area: um;
+}
+.dois {
+  grid-area: dois;
+}
+.tres {
+  grid-area: tres;
+}
+.quatro {
+  grid-area: quatro;
+}
+.cinco {
+  grid-area: cinco;
+}
+.seis {
+  grid-area: seis;
+}
+.sete {
+  grid-area: sete;
+}
+.oito {
+  grid-area: oito;
+}
+.nove {
+  grid-area: nove;
+}
+.zero {
+  grid-area: zero;
+}
+.vi {
+  grid-area: virgula;
+}
+.ma {
+  grid-area: mais;
+}
+.cl {
+  grid-area: clear;
+}
+.me {
+  grid-area: menos;
+}
+.ve {
+  grid-area: vezes;
+}
+.di {
+  grid-area: divisao;
+}
+.en {
+  grid-area: enter;
+}
+.c {
+  grid-area: c;
+}
